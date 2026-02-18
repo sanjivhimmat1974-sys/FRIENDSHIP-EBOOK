@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Book Album 📖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Friendship Book 📖</h1>
+            <p class="subtitle">A collection of memories & messages for you, my dear friend! 💕</p>
+        </div>
+        
+        <div class="book-container">
+            <div class="book" id="book">
+                <!-- Cover Page -->
+                <div class="page cover" id="cover">
+                    <div class="page-content">
+                        <div class="book-title">Friendship Book</div>
+                        <div class="book-subtitle">For My Dear Friend 💝</div>
+                        <div class="book--decoration">📖 ✨ 💖</div>
+                        <p class="flip-hint">Click to open 📖</p>
+                    </div>
+                </div>
+                
+                <!-- Page 1 -->
+                <div class="page" id="page1">
+                    <div class="page-content">
+                        <div class="page-number">1</div>
+                        <h2 class="page-title">Dear Friend 💕</h2>
+                        <div class="message-box">
+                            <p class="message">"A friend is someone who knows the song in your heart and can sing it back to you when you have forgotten the words."</p>
+                            <p class="signature">- Always with you 💝</p>
+                        </div>
+                        <div class="page-decoration">🌸 💗 🌸</div>
+                    </div>
+                </div>
+                
+                <!-- Page 2 -->
+                <div class="page" id="page2">
+                    <div class="page-content">
+                        <div class="page-number">2</div>
+                        <h2 class="page-title">Our Friendship 🌟</h2>
+                        <div class="message-box">
+                            <p class="message">"Friends are like stars - you don't always see them, but you know they're always there."</p>
+                            <p class="signature">Like the stars in the sky ✨</p>
+                        </div>
+                        <div class="page-decoration">⭐ 💫 ⭐</div>
+                    </div>
+                </div>
+                
+                <!-- Page 3 -->
+                <div class="page" id="page3">
+                    <div class="page-content">
+                        <div class="page-number">3</div>
+                        <h2 class="page-title">You Are Special 🌈</h2>
+                        <div class="message-box">
+                            <p class="message">"A true friend is someone who accepts your past, believes in your future, and accepts you just the way you are."</p>
+                            <p class="signature">Love you always 💜</p>
+                        </div>
+                        <div class="page-decoration">🌈 💜 🌈</div>
+                    </div>
+                </div>
+                
+                <!-- Page 4 -->
+                <div class="page" id="page4">
+                    <div class="page-content">
+                        <div class="page-number">4</div>
+                        <h2 class="page-title">Best Friends Forever 👯</h2>
+                        <div class="message-box">
+                            <p class="message">"Best friends are the people in your life who make you laugh louder, smile brighter, and live better."</p>
+                            <p class="signature">BFF 💖</p>
+                        </div>
+                        <div class="page-decoration">👯‍♀️ 💕 👯‍♂️</div>
+                    </div>
+                </div>
+                
+                <!-- Page 5 -->
+                <div class="page" id="page5">
+                    <div class="page-content">
+                        <div class="page-number">5</div>
+                        <h2 class="page-title">Thank You 🙏</h2>
+                        <div class="message-box">
+                            <p class="message">"Thank you for being my friend, for laughing with me, for crying with me, and for making every moment special."</p>
+                            <p class="signature">Grateful friend 💝</p>
+                        </div>
+                        <div class="page-decoration">🙏 💝 🙏</div>
+                    </div>
+                </div>
+                
+                <!-- Page 6 - Last Page -->
+                <div class="page" id="page6">
+                    <div class="page-content">
+                        <div class="page-number">6</div>
+                        <h2 class="page-title">Always & Forever 💝</h2>
+                        <div class="message-box">
+                            <p class="message">"No matter where life takes us, our friendship will remain strong. Distance can never separate true friends!"</p>
+                            <p class="signature">Love you forever 💖</p>
+                        </div>
+                        <div class="page-decoration">💍 💖 💍</div>
+                        <p class="the-end">The End 🌟</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-button" id="prevBtn" onclick="turnPage(-1)">◀ Previous</button>
+            <div class="page-indicator">
+                <span id="currentPage">0</span> / <span id="totalPages">6</span>
+            </div>
+            <button class="nav-button" id="nextBtn" onclick="turnPage(1)">Next ▶</button>
+        </div>
+        
+        <div class="floating-elements">
+            <span class="floating">💖</span>
+            <span class="floating">✨</span>
+            <span class="floating">🌸</span>
+            <span class="floating">⭐</span>
+            <span class="floating">💕</span>
+            <span class="floating">🌟</span>
+            <span class="floating">💝</span>
+            <span class="floating">🌺</span>
+            <span class="floating">💗</span>
+            <span class="floating">✨</span>
+        </div>
+        
+        <div class="hearts-container" id="heartsContainer"></div>
+    </div>
+    
+    <!-- Background Music -->
+    <audio id="background-music" autoplay loop preload="auto">
+        <source src="friendship-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
